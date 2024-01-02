@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .box {
+    @apply shadow-box rounded-3xl border-l border-t border-white bg-[#25252510] p-6 dark:border-black dark:bg-[#00000010];
+  }
+
+  .smallbox {
+    @apply shadow-box border-l border-t border-white;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e91e63;
+  border-radius: 5px;
+}
