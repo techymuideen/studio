@@ -8,6 +8,12 @@ import StudioCard from "./StudioCard";
 
 const Studio = () => {
   const ctx = useContext(ThemeContext);
+  const date = new Date("October 13, 2021 08:11:00");
+  const now = new Date();
+
+  let years = (now.getTime() - date.getTime()) / 1000;
+  years /= 60 * 60 * 24;
+  const experience = Math.abs(Math.round(years / 365.25));
 
   return (
     <div className="h-[100%] w-[100%] bg-studio-light bg-cover px-14 dark:bg-studio-dark">
@@ -24,7 +30,8 @@ const Studio = () => {
               <a className="font-medium underline" href="">
                 {ctx.darkTheme ? "TechyMuideen" : "Muideen Popoola"}
               </a>
-              . A Frontend Developer with over three years coding experience.
+              . A Frontend Developer with over {experience} years coding
+              experience.
             </p>
             <p className="mt-3 text-xs">
               Also part time debater + gamer 🎤👾🎮

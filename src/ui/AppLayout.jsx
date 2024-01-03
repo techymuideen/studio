@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import SideBar from "./SideBar";
 import ThemeContext from "../../store/theme-context";
+import Footer from "./Footer";
 
 const AppLayout = () => {
   const [dark, setDark] = useState(false);
@@ -32,6 +33,7 @@ const AppLayout = () => {
           <main className="">
             <Outlet />
           </main>
+          <Footer />
         </div>
       </div>
     </ThemeContext.Provider>
