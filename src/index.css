@@ -4,11 +4,15 @@
 
 @layer components {
   .box {
-    @apply shadow-box rounded-3xl border-l border-t border-white bg-[#25252510] p-6 dark:border-black dark:bg-[#00000010];
+    @apply rounded-3xl border-l border-t border-white bg-[#25252510] p-6 shadow-box dark:border-black dark:bg-[#00000010];
+  }
+
+  .studiocard {
+    @apply rounded-3xl border-l border-t border-white p-6 shadow-box dark:border-black;
   }
 
   .smallbox {
-    @apply shadow-box border-l border-t border-white;
+    @apply border-l border-t border-[#dadada] shadow-box;
   }
 }
 

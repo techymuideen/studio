@@ -4,15 +4,16 @@ import Svg from "../../ui/Svg";
 import Time from "./Time";
 import ThemeContext from "../../../store/theme-context";
 import Contact from "./Contact";
+import StudioCard from "./StudioCard";
 
 const Studio = () => {
   const ctx = useContext(ThemeContext);
 
   return (
     <div className="h-[100%] w-[100%] bg-studio-light bg-cover px-14 dark:bg-studio-dark">
-      <div className="mx-auto h-screen max-w-[1100px] py-10">
+      <div className="mx-auto  max-w-[1100px] py-10">
         <div className="flex gap-10">
-          <div className="box w-20  flex-1 bg-transparent p-8 backdrop-blur-[1px] transition-all duration-300 hover:backdrop-blur-sm dark:text-white ">
+          <div className="box w-20  flex-[45%] bg-transparent p-8 backdrop-blur-[1px] transition-all duration-300 hover:backdrop-blur-sm dark:text-white ">
             <p className="mb-3 text-[34px] font-light">
               Welcome to{" "}
               <span className="font-black text-pink">the Studio</span>
@@ -34,7 +35,7 @@ const Studio = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-1 flex-col items-end justify-between text-xl font-light">
+          <div className="flex flex-[45%] flex-col items-end justify-between text-xl font-light">
             <div className="box text-lightblack px-4 py-3 backdrop-blur-[1px] transition-all duration-300 hover:backdrop-blur-sm dark:text-white">
               <Time />
             </div>
@@ -43,11 +44,8 @@ const Studio = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 flex flex-wrap gap-10">
-          <div className="box flex-[45%] bg-blue-100">Web pieces</div>
-          <div className="box flex-[45%] bg-blue-300">Projects</div>
-          <div className="box flex-[45%] bg-blue-500">About me</div>
-          <div className="box flex-[45%] bg-blue-700">Clients</div>
+        <div>
+          <StudioCard />
         </div>
       </div>
     </div>
