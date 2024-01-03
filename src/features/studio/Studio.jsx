@@ -9,10 +9,10 @@ const Studio = () => {
   const ctx = useContext(ThemeContext);
 
   return (
-    <div className="bg-studio-light dark:bg-studio-dark h-[100%] w-[100%] bg-cover px-14">
+    <div className="h-[100%] w-[100%] bg-studio-light bg-cover px-14 dark:bg-studio-dark">
       <div className="mx-auto h-screen max-w-[1100px] py-10">
         <div className="flex gap-10">
-          <div className="box  w-20 flex-1 bg-transparent p-8 dark:text-white ">
+          <div className="box w-20  flex-1 bg-transparent p-8 backdrop-blur-[1px] transition-all duration-300 hover:backdrop-blur-sm dark:text-white ">
             <p className="mb-3 text-[34px] font-light">
               Welcome to{" "}
               <span className="font-black text-pink">the Studio</span>
@@ -29,16 +29,16 @@ const Studio = () => {
               Also part time debater + gamer 🎤👾🎮
             </p>
             <div className="flex items-center justify-end">
-              <button className="smallbox bg-bgash shadow-button dark:shadow-darkbutton ml-auto mt-4 rounded-full px-6 py-2 text-sm font-medium capitalize text-white transition-all duration-200 hover:bg-[#B4B4A8] dark:bg-transparent hover:dark:bg-[#1C1F32]">
+              <button className="smallbox ml-auto mt-4 rounded-full bg-bgash px-6 py-2 text-sm font-medium capitalize text-white shadow-button transition-all duration-200 hover:bg-[#B4B4A8] dark:bg-transparent dark:shadow-darkbutton hover:dark:bg-[#1C1F32]">
                 <Svg name="help" color="currentcolor" /> What is this place?
               </button>
             </div>
           </div>
           <div className="flex flex-1 flex-col items-end justify-between text-xl font-light">
-            <div className="box text-lightblack px-4 py-3 dark:text-white">
+            <div className="box text-lightblack px-4 py-3 backdrop-blur-[1px] transition-all duration-300 hover:backdrop-blur-sm dark:text-white">
               <Time />
             </div>
-            <div className="box w-[100%] text-white">
+            <div className="box w-[100%] text-white backdrop-blur-[1px] transition-all duration-300 hover:backdrop-blur-sm">
               <Contact />
             </div>
           </div>

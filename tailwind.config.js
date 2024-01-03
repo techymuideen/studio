@@ -20,8 +20,12 @@ export default {
         "neum-dark-2": "3px 3px 3px #000000, -1px -1px 1px #fff",
         "neum-dark-3": "5px 5px 5px #000000, -1px -1px 1px #fff",
         header: "0px 3px 5px rgba(0,0,0,.4)",
-        button: "0px 2px 3px rgba(0,0,0,.4)",
-        darkbutton: "0px 2px 3px rgba(0,0,0,.8)",
+
+        button: "4px 4px 4px rgba(0,0,0,.4)",
+        darkbutton: "4px 4px 3px rgba(0,0,0,.8)",
+
+        smallbutton: "3px 3px 3px rgba(0,0,0,.4)",
+        hoversmallbutton: "4px 4px 4px rgba(0,0,0,.4)",
 
         box: "0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)",
       },

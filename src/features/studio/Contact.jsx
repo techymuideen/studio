@@ -18,15 +18,16 @@ const Contact = () => {
         <Svg name="search" color="currentcolor" className="mr-[-60px]" />
         <input
           placeholder="Search ('/' to focus, ';' to toggle menu)"
-          className="ml-6 w-[100%] flex-1 rounded-full bg-[#ffffff30] py-3 pl-10 pr-3 outline-none  placeholder:text-inherit"
+          className="ml-6 w-[100%] flex-1 rounded-full bg-[#ffffff30] py-3 pl-10 pr-3 outline-none  placeholder:text-base placeholder:text-inherit"
         />
+        <Svg name="search" color="currentcolor" className="ml-[-35px]" />
       </div>
       <div className="mt-5 flex items-center gap-4">
         {icons.map((icon, id) => {
           return (
             <div
               key={id}
-              className="box flex cursor-pointer  items-center rounded-full bg-[#25252510] p-[8px]"
+              className="smallbox shadow-smallbutton hover:shadow-hoversmallbutton flex cursor-pointer items-center rounded-full bg-[#25252510] p-[8px] transition-shadow duration-200"
             >
               <Svg name={icon.name} color={icon.color} />
             </div>
