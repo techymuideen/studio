@@ -4,9 +4,9 @@ import Svg from "./Svg";
 const navData = [
   { name: "language", text: "Studio", to: "/" },
   { name: "tools", text: "Projects", to: "/projects" },
-  { name: "extension", text: "Web Pieces", to: "/webpieces" },
   { name: "person", text: "About me", to: "/about" },
   { name: "music", text: "Music", to: "/music" },
+  { name: "extension", text: "Blog", to: "/blog" },
   { name: "library", text: "Library", to: "/library" },
 ];
 

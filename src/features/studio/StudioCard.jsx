@@ -7,8 +7,8 @@ import Svg from "../../ui/Svg";
 const StudioCard = () => {
   const cards = [
     {
-      title: "Web Pieces",
-      text: "Browse Webpieces or add a webpiece you are curious about ",
+      title: "Blog",
+      text: "Browse my blog or submit your own article you like upload.",
       img: WebPiece,
       name: "extension",
       color: "#FFB300",
@@ -37,7 +37,7 @@ const StudioCard = () => {
   ];
 
   return (
-    <div className="mt-10 flex flex-wrap gap-10">
+    <div className="mt-10 flex flex-wrap gap-14">
       {cards.map((card, id) => {
         return (
           <div
