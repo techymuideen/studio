@@ -8,7 +8,7 @@ import StudioCard from "./StudioCard";
 
 const Studio = () => {
   const ctx = useContext(ThemeContext);
-  const date = new Date("October 13, 2021 08:11:00");
+  const date = new Date("January 1, 2022 08:11:00");
   const now = new Date();
 
   let years = (now.getTime() - date.getTime()) / 1000;
