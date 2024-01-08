@@ -58,7 +58,7 @@ const StudioCard = () => {
               </p>
             </div>
             <div
-              className={`smallbox shadow-smallbutton hover:shadow-hoversmallbutton cursor-pointer rounded-3xl bg-opacity-20 px-7 py-2 bg-[${card.color}]`}
+              className={`smallbox cursor-pointer rounded-3xl bg-opacity-20 px-7 py-2 shadow-smallbutton hover:shadow-hoversmallbutton bg-[${card.color}]`}
             >
               <Svg name={card.name} color={card.color} size="35" />
             </div>

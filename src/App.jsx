@@ -6,13 +6,24 @@ import Blog from "./features/Blog/Blog";
 import About from "./features/about/About";
 import Music from "./features/music/Music";
 import Library from "./features/library/Library";
+import Technologies from "./features/projects/Technologies";
+import WebProjects from "./features/projects/WebProjects";
+import MyProcess from "./features/projects/MyProcess";
 
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
     children: [
       { path: "/", element: <Studio /> },
-      { path: "/projects", element: <Projects /> },
+      {
+        path: "/projects",
+        element: <Projects />,
+        children: [
+          { path: "/projects", element: <WebProjects /> },
+          { path: "/projects/technologies", element: <Technologies /> },
+          { path: "/projects/myprocess", element: <MyProcess /> },
+        ],
+      },
       { path: "/blog", element: <Blog /> },
       { path: "/about", element: <About /> },
       { path: "/music", element: <Music /> },

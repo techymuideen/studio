@@ -1,13 +1,24 @@
-import { NavLink } from "react-router-dom";
+import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
+import Card from "../../ui/Card";
 
 const Projects = () => {
   return (
-    <div>
-      This is where you will get to see all the exciting projects i am working
-      on
-      <NavLink to="/projects">Web Projects</NavLink>
-      <NavLink to="/projects/technologies">Technologies</NavLink>
-      <NavLink to="/projects/myprocess">My Process</NavLink>
+    <div className="">
+      <div className="flex py-20 pl-4 dark:bg-black">
+        <div className="flex-[50%]">
+          <Card />
+        </div>
+        <div className="flex-[50%] bg-red-500">hgdjafghj</div>
+      </div>
+      <div>
+        <NavLink to="/projects">Web Projects</NavLink>
+        <NavLink to="/projects/technologies">Technologies</NavLink>
+        <NavLink to="/projects/myprocess">My Process</NavLink>
+      </div>
+      <div>
+        <Outlet />
+      </div>
     </div>
   );
 };

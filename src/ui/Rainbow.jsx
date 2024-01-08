@@ -1,6 +1,6 @@
 const Rainbow = () => {
   return (
-    <div className="flex h-[6px] w-[100%]">
+    <div className={`flex h-[100%] w-[100%]`}>
       <div className="h-[100%] flex-1 bg-black dark:bg-white"></div>
       <div className="h-[100%] flex-1 bg-[#FF0000]"></div>
       <div className="h-[100%] flex-1 bg-[#FFB300]"></div>

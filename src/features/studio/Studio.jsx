@@ -24,7 +24,9 @@ const Studio = () => {
               Welcome to{" "}
               <span className="font-black text-pink">the Studio</span>
             </p>
-            <Rainbow />
+            <div className="h-[6px]">
+              <Rainbow />
+            </div>
             <p className="mt-4 text-xl font-light leading-8">
               👋 Hi, I'm{" "}
               <a className="font-medium underline" href="">
