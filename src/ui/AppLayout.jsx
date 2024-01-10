@@ -28,7 +28,7 @@ const AppLayout = () => {
     >
       <div className={`flex max-h-screen ${dark ? "dark" : ""}`}>
         <SideBar />
-        <div className="min-h-screen flex-1 overflow-y-scroll">
+        <div className="border-1 min-h-screen flex-1 overflow-y-scroll">
           <Header />
           <main className="">
             <Outlet />

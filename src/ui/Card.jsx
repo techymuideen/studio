@@ -7,7 +7,7 @@ const Card = () => {
       <div className="h-[10px]">
         <Rainbow />
       </div>
-      <p className="mt-4 text-2xl font-light leading-8">
+      <p className="mt-4 text-2xl font-light leading-10">
         As I continue to learn and grow as a developer, these are some of the
         results of my endeavours so far...
       </p>
