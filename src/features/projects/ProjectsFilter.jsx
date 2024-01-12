@@ -1,83 +1,115 @@
+import { useContext } from "react";
+import ThemeContext from "../../../store/theme-context";
 import Svg from "../../ui/Svg";
 
 const ProjectsFilter = () => {
+  const ctx = useContext(ThemeContext);
+
   return (
-    <div className="bg-[#fff] p-5">
-      <div className="flex items-center gap-2 text-xl font-medium text-[rgba(0,0,0,0.8)]">
-        <Svg name="filter_list" />
+    <div className="sticky top-[100px] bg-[#fff] p-5 dark:bg-[#1E1E1E]">
+      <div className="flex items-center gap-2 text-xl font-medium text-[rgba(0,0,0,0.8)] dark:text-[#fff]">
+        <Svg name="filter_list" color={ctx.darkTheme ? "#fff" : "#000"} />
         Projects Filter
       </div>
-      <p className="mt-1 text-sm font-normal text-[rgba(0,0,0,0.6)]">
+      <p className="mt-1 text-sm font-normal text-[rgba(0,0,0,0.6)] dark:text-[rgba(255,255,255,.6)]">
         Filter Projects by technologies used
       </p>
-      <form className="mt-6 flex flex-wrap gap-5 px-4 text-base font-normal text-[rgba(0,0,0,.6)]">
-        <div className="flex  items-center gap-2">
-          <input
-            type="checkbox"
-            className="h-4 w-4 cursor-pointer  border-red-300 bg-red-100 text-red-600 focus:ring-red-200"
-            id="html"
-          />
-          <label htmlFor="html">HTML</label>
+      <form className="mt-6 flex flex-wrap gap-5 px-4 text-base font-normal text-[rgba(0,0,0,.6)] dark:text-[rgba(255,255,255,.6)]">
+        <div className="flex  cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="html" />
+          <label className="cursor-pointer" htmlFor="html">
+            HTML
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="javascript" />
-          <label htmlFor="javascript">Javascript</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="javascript" />
+          <label className="cursor-pointer" htmlFor="javascript">
+            Javascript
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="vuejs" />
-          <label htmlFor="vuejs">Vue JS</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="vuejs" />
+          <label className="cursor-pointer" htmlFor="vuejs">
+            Vue JS
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="vuetify" />
-          <label htmlFor="vuetify">Vuetify</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="vuetify" />
+          <label className="cursor-pointer" htmlFor="vuetify">
+            Vuetify
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="wordpress" />
-          <label htmlFor="wordpress">Wordpress</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="wordpress" />
+          <label className="cursor-pointer" htmlFor="wordpress">
+            Wordpress
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="bootstrap" />
-          <label htmlFor="bootstrap">Bootstrap</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="bootstrap" />
+          <label className="cursor-pointer" htmlFor="bootstrap">
+            Bootstrap
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="nodejs" />
-          <label htmlFor="nodejs">Node JS</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="nodejs" />
+          <label className="cursor-pointer" htmlFor="nodejs">
+            Node JS
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="firebase" />
-          <label htmlFor="firebase">Firebase</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="firebase" />
+          <label className="cursor-pointer" htmlFor="firebase">
+            Firebase
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="tailwindcss" />
-          <label htmlFor="tailwindcss">Tailwind CSS</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="tailwindcss" />
+          <label className="cursor-pointer" htmlFor="tailwindcss">
+            Tailwind CSS
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="reactjs" />
-          <label htmlFor="reactjs">React JS</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="reactjs" />
+          <label className="cursor-pointer" htmlFor="reactjs">
+            React JS
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="python" />
-          <label htmlFor="python">Python</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="python" />
+          <label className="cursor-pointer" htmlFor="python">
+            Python
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="angular" />
-          <label htmlFor="angular">Angular</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="angular" />
+          <label className="cursor-pointer" htmlFor="angular">
+            Angular
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="typescript" />
-          <label htmlFor="typescript">Typescript</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="typescript" />
+          <label className="cursor-pointer" htmlFor="typescript">
+            Typescript
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="nextjs" />
-          <label htmlFor="nextjs">Next JS</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="nextjs" />
+          <label className="cursor-pointer" htmlFor="nextjs">
+            Next JS
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="sass" />
-          <label htmlFor="sass">Sass</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="sass" />
+          <label className="cursor-pointer" htmlFor="sass">
+            Sass
+          </label>
         </div>
-        <div className="flex items-center gap-2">
-          <input type="checkbox" id="django" />
-          <label htmlFor="django">Django</label>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input type="checkbox" className="checkbox" id="django" />
+          <label className="cursor-pointer" htmlFor="django">
+            Django
+          </label>
         </div>
       </form>
     </div>

@@ -14,6 +14,10 @@
   .smallbox {
     @apply border-l border-t border-[#dadada] shadow-box;
   }
+
+  .checkbox {
+    @apply h-[18px] w-[18px] cursor-pointer rounded-[3px] border-2  border-[#fff] bg-transparent text-pink ring-0 focus:ring-0;
+  }
 }
 
 ::-webkit-scrollbar {

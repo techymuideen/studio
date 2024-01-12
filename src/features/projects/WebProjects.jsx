@@ -53,7 +53,7 @@ const WebProjects = () => {
         <div className="flex-[70%]">
           <ProjectItem projects={webprojects} />
         </div>
-        <div className="flex-[30%]">
+        <div className="flex-[30%] relative">
           <ProjectsFilter />
         </div>
       </div>
