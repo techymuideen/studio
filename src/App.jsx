@@ -6,9 +6,9 @@ import Blog from "./features/Blog/Blog";
 import About from "./features/about/About";
 import Music from "./features/music/Music";
 import Library from "./features/library/Library";
-import Technologies from "./features/projects/Technologies";
-import WebProjects from "./features/projects/WebProjects";
-import MyProcess from "./features/projects/MyProcess";
+import Technologies from "./features/projects/technologies/Technologies";
+import WebProjects from "./features/projects/webprojects/WebProjects";
+import MyProcess from "./features/projects/process/MyProcess";
 
 const router = createBrowserRouter([
   {

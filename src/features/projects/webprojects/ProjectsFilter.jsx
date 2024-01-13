@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import ThemeContext from "../../../store/theme-context";
-import Svg from "../../ui/Svg";
+import ThemeContext from "../../../../store/theme-context";
+import Svg from "../../../ui/Svg";
 
 const ProjectsFilter = () => {
   const ctx = useContext(ThemeContext);

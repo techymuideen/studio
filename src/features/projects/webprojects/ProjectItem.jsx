@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Svg from "../../ui/Svg";
+import Svg from "../../../ui/Svg";
 
 const ProjectItem = (props) => {
   return (

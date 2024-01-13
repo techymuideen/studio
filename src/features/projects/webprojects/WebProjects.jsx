@@ -1,8 +1,8 @@
-import Rainbow from "../../ui/Rainbow";
+import Rainbow from "../../../ui/Rainbow";
 import ProjectItem from "./ProjectItem";
-import trillo from "../../assets/trillo.png";
-import nexter from "../../assets/nexter.png";
-import natours from "../../assets/natours.png";
+import trillo from "../../../assets/trillo.png";
+import nexter from "../../../assets/nexter.png";
+import natours from "../../../assets/natours.png";
 import ProjectsFilter from "./ProjectsFilter";
 
 const WebProjects = () => {
@@ -49,11 +49,11 @@ const WebProjects = () => {
         <Rainbow />
       </div>
 
-      <div className="flex pt-10 gap-5">
+      <div className="flex gap-5 pt-10">
         <div className="flex-[70%]">
           <ProjectItem projects={webprojects} />
         </div>
-        <div className="flex-[30%] relative">
+        <div className="relative flex-[30%]">
           <ProjectsFilter />
         </div>
       </div>
