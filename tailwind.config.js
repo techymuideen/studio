@@ -7,6 +7,21 @@ export default {
       sans: "Roboto, sans-serif",
     },
     extend: {
+      animation: {
+        wiggle: "wiggle 300ms ease-out forwards",
+      },
+      keyframes: {
+        wiggle: {
+          "0%": {
+            opacity: "0",
+            transform: "scale(.5)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scale(1)",
+          },
+        },
+      },
       boxShadow: {
         neum: "5px 5px 5px #dadada, -5px -5px 5px #ffffff",
         "neum-dark": "3px 3px 3px #000000, -3px -3px 3px #121212",
@@ -24,10 +39,15 @@ export default {
         button: "4px 4px 4px rgba(0,0,0,.4)",
         darkbutton: "4px 4px 3px rgba(0,0,0,.8)",
 
+        "modal-shadow": "0 2px 8px rgba(0, 0, 0, 0.25)",
+
         smallbutton: "3px 3px 3px rgba(0,0,0,.4)",
         hoversmallbutton: "4px 4px 4px rgba(0,0,0,.4)",
 
         box: "0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)",
+        boxabout: " 2px 2px 5px 0 rgba(0,0,0,.5)",
+        modalbox:
+          " 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12)",
       },
 
       colors: {
@@ -44,8 +64,12 @@ export default {
         "light-black": "rgba(0,0,0,87)",
       },
       backgroundImage: {
-        "studio-light": "url(/src/assets/homelight.webp)",
+        "studio-light": "url(../src/assets/homelight.webp)",
         "studio-dark": "url('../src/assets/dark.webp')",
+        "about-light":
+          "linear-gradient(to top,  rgba(255,255,255,0.8), rgba(255,255,255,0.0)), url(../src/assets/neoncityday.gif)",
+        "about-dark":
+          "linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.0)), url(../src/assets/neoncitydark.gif)",
       },
     },
   },

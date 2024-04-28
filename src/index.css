@@ -7,6 +7,10 @@
     @apply rounded-3xl border-l border-t border-white bg-[#25252510] p-6 shadow-box dark:border-black dark:bg-[#00000010];
   }
 
+  .box-about {
+    @apply rounded-3xl border border-b-[#0002] border-l-[#fff9] border-r-[#0002] border-t-[#fff9] bg-[#25252510] shadow-boxabout  dark:border-b-[#000] dark:border-l-[#fff6] dark:border-r-[#000] dark:border-t-[#fff6] dark:bg-[#00000010];
+  }
+
   .studiocard {
     @apply rounded-3xl border-l border-t border-white p-6 shadow-box dark:border-black;
   }
@@ -17,6 +21,32 @@
 
   .checkbox {
     @apply h-[19px] w-[19px] cursor-pointer rounded-[2px] border-[2.8px] text-pink  ring-0  focus:ring-0 dark:border-[#fff] dark:bg-transparent;
+  }
+
+  .handler {
+    @apply rounded-full px-2 py-3 hover:bg-darkash dark:hover:bg-neum-bg-dark;
+  }
+
+  .pad {
+    @apply cursor-pointer pl-14;
+  }
+
+  .space {
+    @apply flex gap-4;
+  }
+}
+
+@layer utilities {
+  .clipy {
+    clip-path: polygon(
+      10px 0%,
+      10px 20%,
+      0% 40%,
+      10px 60%,
+      10px 100%,
+      100% 100%,
+      100% 0%
+    );
   }
 }
 
@@ -31,4 +61,8 @@
 ::-webkit-scrollbar-thumb {
   background: #e91e63;
   border-radius: 5px;
+}
+
+html {
+  height: auto;
 }

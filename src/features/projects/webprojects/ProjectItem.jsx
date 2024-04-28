@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
 import Svg from "../../../ui/Svg";
+import Popup from "../../../ui/Popup";
 
 const ProjectItem = (props) => {
   return (
-    <div className=" flex flex-col gap-5">
+    <div className=" flex flex-col gap-5 ">
       {props.projects.map((project, id) => {
         const completed = project.status === "completed";
         const uncompleted = project.status === "uncompleted";
 
         return (
           <div
+            data-aos="fade-right"
             key={id}
             className="box flex h-[250px] rounded-md bg-[#fff] p-0 dark:bg-[#1E1E1E]"
           >
@@ -34,7 +36,11 @@ const ProjectItem = (props) => {
               </h4>
               <div className="mb-2 mt-auto flex gap-4">
                 {project.stack.map((stack, id) => {
-                  return <Svg key={id} name={stack.name} />;
+                  return (
+                    <Popup key={id} text={stack.name}>
+                      <Svg name={stack.name} />
+                    </Popup>
+                  );
                 })}
               </div>
               <div className="mt-2 flex gap-3">

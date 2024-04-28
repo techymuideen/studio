@@ -12,7 +12,7 @@ const navData = [
 
 const Navigation = () => {
   return (
-    <nav className="pt-4 ">
+    <nav className="">
       <ul className="flex flex-col text-base font-medium uppercase text-gray-800 dark:text-white">
         {navData.map((nav) => {
           return (

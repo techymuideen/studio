@@ -11,7 +11,7 @@ const Technologies = () => {
       <div className="h-2">
         <Rainbow />
       </div>
-      <div>
+      <div data-aos="fade-right">
         <TechDirectory />
       </div>
     </div>

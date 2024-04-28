@@ -1,6 +1,6 @@
-const Rainbow = () => {
+const Rainbow = (props) => {
   return (
-    <div className={`flex h-[100%] w-[100%]`}>
+    <div onClick={props.onClick} className={`flex h-[100%] w-[100%]`}>
       <div className="h-[100%] flex-1 bg-black dark:bg-white"></div>
       <div className="h-[100%] flex-1 bg-[#FF0000]"></div>
       <div className="h-[100%] flex-1 bg-[#FFB300]"></div>

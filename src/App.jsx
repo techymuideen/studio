@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./ui/AppLayout";
 import Studio from "./features/studio/Studio";
@@ -9,6 +10,8 @@ import Library from "./features/library/Library";
 import Technologies from "./features/projects/technologies/Technologies";
 import WebProjects from "./features/projects/webprojects/WebProjects";
 import MyProcess from "./features/projects/process/MyProcess";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +36,15 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      offset: 50,
+      duration: 500,
+      easing: "ease-in",
+      mirror: true,
+    });
+  }, []);
+
   return <RouterProvider router={router} />;
 }
 

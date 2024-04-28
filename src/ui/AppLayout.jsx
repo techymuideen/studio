@@ -26,11 +26,11 @@ const AppLayout = () => {
         onToggle: toggleSideBarHandler,
       }}
     >
-      <div className={`flex max-h-screen ${dark ? "dark" : ""}`}>
+      <div className={`flex  ${dark ? "dark" : ""} `} id="overlays">
         <SideBar />
-        <div className="border-1 min-h-screen flex-1 overflow-y-scroll">
+        <div className="border-1 min-h-[100%] flex-1 ">
           <Header />
-          <main className="">
+          <main className="max-h-[100%] ">
             <Outlet />
           </main>
           <Footer />

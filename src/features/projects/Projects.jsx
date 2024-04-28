@@ -4,12 +4,12 @@ import Card from "../../ui/Card";
 
 const Projects = () => {
   return (
-    <div className="">
+    <div className="bg-[#F5F5F5] ">
       <div className="flex pb-10 pl-4  pt-20 dark:bg-black">
         <div className="flex-[50%]">
           <Card />
         </div>
-        <div className="flex-[50%] bg-red-500">hgdjafghj</div>
+        <div className="flex-[50%] "></div>
       </div>
       <div className="h-[10px] bg-gradient-to-r from-pink to-[#9C27B0]" />
       <div className="bg-[#F5F5F5] px-4 py-8 dark:bg-black">

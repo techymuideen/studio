@@ -3,6 +3,9 @@ import Projects from "../../assets/needhelp.svg";
 import About from "../../assets/about.svg";
 import Clients from "../../assets/client.svg";
 import Svg from "../../ui/Svg";
+import { Link } from "react-router-dom";
+
+import "aos/dist/aos.css";
 
 const StudioCard = () => {
   const cards = [
@@ -12,6 +15,7 @@ const StudioCard = () => {
       img: WebPiece,
       name: "extension",
       color: "#FFB300",
+      link: "blog",
     },
     {
       title: "Projects",
@@ -19,6 +23,7 @@ const StudioCard = () => {
       img: Projects,
       name: "work",
       color: "#2196F3",
+      link: "projects",
     },
     {
       title: "About Me",
@@ -26,6 +31,7 @@ const StudioCard = () => {
       img: About,
       name: "person",
       color: "#9C27B0",
+      link: "about",
     },
     {
       title: "Clients",
@@ -33,11 +39,12 @@ const StudioCard = () => {
       img: Clients,
       name: "tools",
       color: "#4CAF50",
+      link: "",
     },
   ];
 
   return (
-    <div className="mt-10 flex flex-wrap gap-14">
+    <div data-aos="fade-left" className="mt-10 flex flex-wrap gap-14 ">
       {cards.map((card, id) => {
         return (
           <div
@@ -57,11 +64,12 @@ const StudioCard = () => {
                 {card.text}
               </p>
             </div>
-            <div
+            <Link
+              to={`/${card.link}`}
               className={`smallbox cursor-pointer rounded-3xl bg-opacity-20 px-7 py-2 shadow-smallbutton hover:shadow-hoversmallbutton bg-[${card.color}]`}
             >
               <Svg name={card.name} color={card.color} size="35" />
-            </div>
+            </Link>
           </div>
         );
       })}

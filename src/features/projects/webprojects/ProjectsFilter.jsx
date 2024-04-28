@@ -6,7 +6,10 @@ const ProjectsFilter = () => {
   const ctx = useContext(ThemeContext);
 
   return (
-    <div className="sticky top-[100px] bg-[#fff] p-5 dark:bg-[#1E1E1E]">
+    <div
+      data-aos="fade-left"
+      className="sticky top-[100px] bg-[#fff] p-5 dark:bg-[#1E1E1E]"
+    >
       <div className="flex items-center gap-2 text-xl font-medium text-[rgba(0,0,0,0.8)] dark:text-[#fff]">
         <Svg name="filter_list" color={ctx.darkTheme ? "#fff" : "#000"} />
         Projects Filter
