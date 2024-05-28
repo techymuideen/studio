@@ -5,6 +5,7 @@ import Rainbow from "../../ui/Rainbow";
 import profile from "../../assets/pop.png";
 import Popup from "../../ui/Popup";
 import AboutModal from "./AboutModal";
+import { Link } from "react-router-dom";
 
 const skills = [
   { name: "html5", icon: "HTML5" },
@@ -14,7 +15,6 @@ const skills = [
   { name: "firebase", icon: "Firebase" },
   { name: "node-dot-js", icon: "Nodejs" },
   { name: "sass", icon: "Sass" },
-  { name: "materialdesign", icon: "Materialize CSS" },
   { name: "tailwindcss", icon: "Tailwind" },
   { name: "bootstrap", icon: "Bootstrap" },
   { name: "next-dot-js", icon: "Nextjs" },
@@ -36,30 +36,34 @@ const About = () => {
   };
 
   return (
-    <div className="h-[100vh] w-[100%] bg-about-light bg-cover px-14 pt-5 dark:bg-about-dark">
+    <div className="h-[100vh] w-[100%] bg-about-light bg-cover px-6 pt-5 lg:px-14 dark:bg-about-dark">
       <div
         data-aos="zoom-out-down"
         data-aos-duration="150"
-        className="box-about mx-auto flex h-[82%]  w-[50%] flex-col text-white backdrop-blur-sm transition-all duration-300 "
+        className="box-about mx-auto flex h-[82%] w-[100%] flex-col  text-white backdrop-blur-sm transition-all duration-300 md:w-[70%] lg:w-[50%] "
       >
-        <div className="relative h-[35%]  rounded-t-3xl p-2">
+        <div className="relative  h-[35%]  rounded-t-3xl p-2">
           <div className="flex items-center gap-1">
             <Popup text="Github">
               <div className="cursor-pointer rounded-full p-3 transition hover:bg-[#fff4]">
-                <Svg
-                  name="github1"
-                  size="28"
-                  color={ctx.darkTheme ? "#fff" : "#000"}
-                />
+                <Link to="">
+                  <Svg
+                    name="github1"
+                    size="28"
+                    color={ctx.darkTheme ? "#fff" : "#000"}
+                  />
+                </Link>
               </div>
             </Popup>
-            <Popup text="Twitter">
+            <Popup text="LinkedIn">
               <div className="cursor-pointer rounded-full p-3 transition hover:bg-[#fff4]">
-                <Svg
-                  name="twitter1"
-                  size="28"
-                  color={ctx.darkTheme ? "#fff" : "#000"}
-                />
+                <Link to="">
+                  <Svg
+                    name="linkedin1"
+                    size="28"
+                    color={ctx.darkTheme ? "#fff" : "#000"}
+                  />
+                </Link>
               </div>
             </Popup>
             <Popup className="ml-auto" text="Menu">
@@ -92,7 +96,11 @@ const About = () => {
               return (
                 <Popup text={skill.icon} key={skill.name}>
                   <div className=" rounded-full bg-white p-[6px] dark:bg-[#0004]">
-                    <Svg name={skill.name} size={20} />
+                    <Svg
+                      name={skill.name}
+                      size={20}
+                      color={ctx.darkTheme ? "#fff" : "#000"}
+                    />
                   </div>
                 </Popup>
               );

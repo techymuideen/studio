@@ -9,7 +9,7 @@ import ModalB from "../studio/ModalB";
 
 const main = (
   <div className="m-4 flex items-start gap-4 rounded-md bg-[#E4F2FE] p-4 font-normal text-[#2196f3] dark:bg-[#1E2C38]">
-    <Svg name="error_outline" size="30" color="#2196f3" />
+    <Svg name="error_outline" size="20" color="#2196f3" />
     <div>
       <span className="font-bold">Coming Soon.</span> Working on adding them
       here. You can still{" "}
@@ -23,104 +23,177 @@ const main = (
 
 const Clickss = [
   {
-    icon: "tools",
+    icon: "book",
     text: "Programming Languages",
     content: (
       <ol className=" flex flex-col gap-2">
-        <l1>Javascript - ES6</l1>
-        <l1>Typescript</l1>
-        <l1>Python</l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="node-dot-js" size="20" />
+          <span>Javascript - ES6</span>
+        </l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="typescript" size="20" />
+          <span>Typescript</span>
+        </l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="python" size="20" />
+          <span>Python</span>
+        </l1>
       </ol>
     ),
   },
   {
-    icon: "work",
+    icon: "monitor",
     text: "Front End",
     content: (
       <ol className=" flex flex-col gap-2">
-        <l1>HTML 5</l1>
-        <l1>CSS 3</l1>
-        <l1>Javascript - ES6</l1>
-        <l1>React</l1>
-        <l1>BootStrap</l1>
-        <l1>Materialize CSS</l1>
-        <l1>Sass</l1>
-        <l1>Tailwind</l1>
-        <l1>Material UI</l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="html51" size="20" />
+          <span>HTML 5</span>
+        </l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="css31" size="20" />
+          <span>CSS 3</span>
+        </l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="javascript" size="20" />
+          <span>Javascript - ES6</span>
+        </l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="react" size="20" />
+          <span>React</span>
+        </l1>
+
+        <l1 className="flex items-center gap-3">
+          <Svg name="bootstrap" size="20" />
+          <span>BootStrap</span>
+        </l1>
+
+        <l1 className="flex items-center gap-3">
+          <Svg name="sass" size="20" />
+          <span>Sass</span>
+        </l1>
+
+        <l1 className="flex items-center gap-3">
+          <Svg name="tailwindcss" size="20" />
+          <span>Tailwind</span>
+        </l1>
       </ol>
     ),
   },
   {
-    icon: "work",
+    icon: "terminal",
     text: "Back End",
     content: (
       <ol className=" flex flex-col gap-2">
-        <l1>Node + Express</l1>
-        <l1>Firebase</l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="node-dot-js" size="20" />
+          <span>Node + Express</span>
+        </l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="firebase" size="20" />
+          <span>Firebase</span>
+        </l1>
       </ol>
     ),
   },
   {
-    icon: "insert_invitation",
+    icon: "database",
     text: "Databases",
     content: (
       <ol className=" flex flex-col gap-2">
-        <l1>MySQL</l1>
-        <l1>MongoDB</l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="mysql" size="20" />
+          <span>MySQL</span>
+        </l1>
+
+        <l1 className="flex items-center gap-3">
+          <Svg name="library_books" size="20" />
+          <span>MongoDB</span>
+        </l1>
       </ol>
     ),
   },
   {
-    icon: "computer",
+    icon: "servers",
     text: "Hosting Platforms",
     content: (
       <ol className=" flex flex-col gap-2">
-        <l1>Vercel</l1>
-        <l1>Netlify</l1>
-        <l1>Firebase</l1>
-        <l1>C Panel</l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="exclamation-triangle" size="20" />
+          <span>Vercel</span>
+        </l1>
+
+        <l1 className="flex items-center gap-3">
+          <Svg name="account_tree" size="20" />
+          <span>Netlify</span>
+        </l1>
+
+        <l1 className="flex items-center gap-3">
+          <Svg name="firebase" size="20" />
+          <span>Firebase</span>
+        </l1>
+
+        <l1 className="flex items-center gap-3">
+          <Svg name="cpanel" size="20" />
+          <span>C Panel</span>
+        </l1>
       </ol>
     ),
   },
 
   {
-    icon: "computer",
+    icon: "system_update_tv",
     text: "Version Control",
     content: (
       <ol className=" flex flex-col gap-2">
-        <l1>Git</l1>
-        <l1>Github</l1>
-        <l1>Gitlab</l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="git1" size="20" />
+          <span>Git</span>
+        </l1>
+
+        <l1 className="flex items-center gap-3">
+          <Svg name="github11" size="20" />
+          <span>Github</span>
+        </l1>
+
+        <l1 className="flex items-center gap-3">
+          <Svg name="gitlab1" size="20" />
+          <span>Gitlab</span>
+        </l1>
       </ol>
     ),
   },
 
   {
-    icon: "computer",
+    icon: "miscellaneous_services",
     text: "Content Management",
     content: (
       <ol className=" flex flex-col gap-2">
-        <l1>Wordpress</l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="wordpress1" size="20" />
+          <span>Wordpress</span>
+        </l1>
       </ol>
     ),
   },
 ];
 
 const contents = [
-  { name: "Experience", icon: "work1", title: "My Experience", main: main },
+  { name: "Cert", icon: "award", title: "My Certificates", main: main },
   {
     name: "Skills",
     icon: "person",
     title: "My Skills",
   },
-  { name: "Cert", icon: "email", title: "My Certificates", main: main },
+  { name: "Experience", icon: "work", title: "My Experience", main: main },
   {
     name: "Shenanigans",
-    icon: "email",
+    icon: "ice-cream1",
     title: "Shenanigans",
     main: (
       <div className="m-4 flex items-start gap-4 rounded-md bg-[#E4F2FE] p-4 font-normal text-[#2196f3] dark:bg-[#1E2C38]">
-        <Svg name="error_outline" size="30" color="#2196f3" />
+        <Svg name="error_outline" size="20" color="#2196f3" />
         <div>
           <span className="font-bold">Coming Soon.</span> This section will just
           be about fun stuff that I do outside of work.
@@ -190,7 +263,7 @@ const AboutLink = () => {
                     onClick={hideModalAHander1}
                     className="ml-auto flex cursor-pointer items-center rounded-full bg-ash p-[12px] shadow-neum hover:shadow-deneum dark:bg-black dark:shadow-rounded-neum-dark dark:hover:bg-neum-bg-dark dark:hover:shadow-round-deneum-dark"
                   >
-                    <Svg size="15" name="tools" color="currentcolor" />
+                    <Svg size="15" name="close" color="currentcolor" />
                   </div>
                 </div>
                 <div className="h-[3px]">
@@ -205,7 +278,7 @@ const AboutLink = () => {
                     to=""
                     className="hover:bg-currentcolor ml-auto mt-2 flex items-center justify-center gap-2 rounded-lg  bg-ash px-4   py-2 text-base font-medium  text-[#4CAF50] shadow-neum transition-all  duration-150 hover:bg-darkash  hover:shadow-deneum dark:bg-black  dark:shadow-neum-dark-2 dark:hover:bg-neum-bg-dark  dark:hover:shadow-neum-dark-3"
                   >
-                    <Svg name="send" color="currentcolor" />
+                    <Svg name="check" color="currentcolor" />
                     ok, got it
                   </Link>
                 </div>
@@ -226,7 +299,12 @@ const AboutLink = () => {
 
         {showAboutModal2 && (
           <div>
-            <ModalB Clicks={Clickss} onClose={hideModalAHander2}></ModalB>
+            <ModalB
+              Clicks={Clickss}
+              icon="person"
+              title="My Skills"
+              onClose={hideModalAHander2}
+            ></ModalB>
           </div>
         )}
       </div>
@@ -251,7 +329,7 @@ const AboutLink = () => {
                     onClick={hideModalAHander3}
                     className="ml-auto flex cursor-pointer items-center rounded-full bg-ash p-[12px] shadow-neum hover:shadow-deneum dark:bg-black dark:shadow-rounded-neum-dark dark:hover:bg-neum-bg-dark dark:hover:shadow-round-deneum-dark"
                   >
-                    <Svg size="15" name="tools" color="currentcolor" />
+                    <Svg size="15" name="close" color="currentcolor" />
                   </div>
                 </div>
                 <div className="h-[3px]">
@@ -266,7 +344,7 @@ const AboutLink = () => {
                     to=""
                     className="hover:bg-currentcolor ml-auto mt-2 flex items-center justify-center gap-2 rounded-lg  bg-ash px-4   py-2 text-base font-medium  text-[#4CAF50] shadow-neum transition-all  duration-150 hover:bg-darkash  hover:shadow-deneum dark:bg-black  dark:shadow-neum-dark-2 dark:hover:bg-neum-bg-dark  dark:hover:shadow-neum-dark-3"
                   >
-                    <Svg name="send" color="currentcolor" />
+                    <Svg name="check" color="currentcolor" />
                     ok, got it
                   </Link>
                 </div>
@@ -296,7 +374,7 @@ const AboutLink = () => {
                     onClick={hideModalAHander4}
                     className="ml-auto flex cursor-pointer items-center rounded-full bg-ash p-[12px] shadow-neum hover:shadow-deneum dark:bg-black dark:shadow-rounded-neum-dark dark:hover:bg-neum-bg-dark dark:hover:shadow-round-deneum-dark"
                   >
-                    <Svg size="15" name="tools" color="currentcolor" />
+                    <Svg size="15" name="close" color="currentcolor" />
                   </div>
                 </div>
                 <div className="h-[3px]">
@@ -311,7 +389,7 @@ const AboutLink = () => {
                     to=""
                     className="hover:bg-currentcolor ml-auto mt-2 flex items-center justify-center gap-2 rounded-lg  bg-ash px-4   py-2 text-base font-medium  text-[#4CAF50] shadow-neum transition-all  duration-150 hover:bg-darkash  hover:shadow-deneum dark:bg-black  dark:shadow-neum-dark-2 dark:hover:bg-neum-bg-dark  dark:hover:shadow-neum-dark-3"
                   >
-                    <Svg name="send" color="currentcolor" />
+                    <Svg name="check" color="currentcolor" />
                     ok, got it
                   </Link>
                 </div>
@@ -325,8 +403,9 @@ const AboutLink = () => {
         onClick=""
         className="hover:bg-currentcolor flex items-center justify-center gap-2 rounded-lg bg-ash px-4 py-3 uppercase shadow-neum transition-all duration-150 hover:bg-darkash hover:shadow-deneum dark:bg-black dark:shadow-neum-dark dark:hover:bg-neum-bg-dark dark:hover:shadow-deneum-dark"
       >
-        <Svg name="email" color="currentcolor" />
+        <Svg name="file_download" color="currentcolor" />
         Resume
+        <Svg name="launch" color="currentcolor" />
       </Link>
     </div>
   );

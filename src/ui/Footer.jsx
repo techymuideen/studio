@@ -11,9 +11,11 @@ const Footer = () => {
       </p>
 
       <Link className="ml-auto" to="">
-        Music Player 🎵
+        Music <span className="hidden lg:inline">Player</span> 🎵
       </Link>
-      <Link to="">Try out different colors 🎨</Link>
+      <Link to="">
+        <span className="hidden lg:inline">Try out different</span> colors 🎨
+      </Link>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Clicks = [
   {
-    icon: "notebook",
+    icon: "person1",
     text: "Info About me",
     content: "My skills, Experience, Certifications, Projects, Resume, etc",
     link: "about",
@@ -26,7 +26,7 @@ const Clicks = [
     link: "blog",
   },
   {
-    icon: "insert_invitation",
+    icon: "handshake-o",
     text: "My Client Platform",
     content: "A leantime Agile dev platform where I maintain client projects",
     link: "",
@@ -51,7 +51,7 @@ const ModalA = (props) => {
             onClick={props.onClose}
             className="ml-auto flex cursor-pointer items-center rounded-full bg-ash p-[12px] shadow-neum hover:shadow-deneum dark:bg-black dark:shadow-rounded-neum-dark dark:hover:bg-neum-bg-dark dark:hover:shadow-round-deneum-dark"
           >
-            <Svg size="15" name="tools" color="currentcolor" />
+            <Svg size="15" name="close" color="currentcolor" />
           </div>
         </div>
         <div className="h-[3px]">
@@ -82,7 +82,7 @@ const ModalA = (props) => {
             to=""
             className="hover:bg-currentcolor ml-auto mt-2 flex items-center justify-center gap-2 rounded-lg  bg-ash px-4   py-2 text-base font-medium  text-[#4CAF50] shadow-neum transition-all  duration-150 hover:bg-darkash  hover:shadow-deneum dark:bg-black  dark:shadow-neum-dark-2 dark:hover:bg-neum-bg-dark  dark:hover:shadow-neum-dark-3"
           >
-            <Svg name="send" color="currentcolor" />
+            <Svg name="check" color="currentcolor" />
             ok, got it
           </Link>
         </div>

@@ -44,7 +44,7 @@ const StudioCard = () => {
   ];
 
   return (
-    <div data-aos="fade-left" className="mt-10 flex flex-wrap gap-14 ">
+    <div data-aos="fade-up" className="mt-10 flex flex-wrap gap-14 ">
       {cards.map((card, id) => {
         return (
           <div
@@ -52,7 +52,7 @@ const StudioCard = () => {
             className={`studiocard flex flex-[45%] items-center gap-8 bg-opacity-15 bg-[${card.color}] backdrop-blur-[2px] transition-all duration-300 hover:backdrop-blur-sm`}
           >
             <img
-              className="h-[80px] w-[80px]"
+              className="hidden h-[80px] w-[80px] lg:inline "
               src={card.img}
               alt={card.title}
             />

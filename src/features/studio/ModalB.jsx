@@ -4,20 +4,18 @@ import Rainbow from "../../ui/Rainbow";
 import Svg from "../../ui/Svg";
 import { Link } from "react-router-dom";
 
-
-
 const ModalB = (props) => {
   return (
     <Modal onClose={props.onClose}>
       <div className="pb-4">
         <div className="flex items-center gap-4 p-5 text-2xl font-medium text-[#000] dark:text-[#fff]">
-          <Svg name="help" color="#E91E63" />
-          <p>What I'm up to lately</p>
+          <Svg name={props.icon ? props.icon : "help"} color="#E91E63" />
+          <p>{props.title ? props.title : "What I'm up to lately"}</p>
           <div
             onClick={props.onClose}
             className="ml-auto flex cursor-pointer items-center rounded-full bg-ash p-[12px] shadow-neum hover:shadow-deneum dark:bg-black dark:shadow-rounded-neum-dark dark:hover:bg-neum-bg-dark dark:hover:shadow-round-deneum-dark"
           >
-            <Svg size="15" name="tools" color="currentcolor" />
+            <Svg size="15" name="close" color="currentcolor" />
           </div>
         </div>
         <div className="h-[3px]">

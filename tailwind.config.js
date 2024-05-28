@@ -70,6 +70,10 @@ export default {
           "linear-gradient(to top,  rgba(255,255,255,0.8), rgba(255,255,255,0.0)), url(../src/assets/neoncityday.gif)",
         "about-dark":
           "linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.0)), url(../src/assets/neoncitydark.gif)",
+        "video-light":
+          "linear-gradient(90deg,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 45%, transparent 45%), url(../src/assets/lightt.gif)",
+        "video-dark":
+          "linear-gradient(90deg,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 45%, transparent 45%), url(../src/assets/neoncitydark.gif)",
       },
     },
   },

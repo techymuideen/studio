@@ -15,7 +15,7 @@ const Modal = (props) => {
       <div
         data-aos="zoom-in-down"
         data-aos-duration="200"
-        className="modal-shadow fixed left-[35%] top-[10vh] z-30 w-[35%] rounded-2xl  bg-[#fff] dark:bg-black "
+        className="modal-shadow fixed left-[8%] top-[10vh] z-30 w-[85%] rounded-2xl bg-[#fff] md:left-[27%] md:w-[45%] lg:left-[30%]  lg:w-[45%] dark:bg-black "
       >
         <div className={props.className}>{props.children}</div>
       </div>

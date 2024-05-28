@@ -12,13 +12,17 @@ const Contact = () => {
     {
       icon: "tools",
       text: "Currently working on",
-      content: "1. VerseMilla-An online market place ",
+      content: (
+        <ol>
+          <li className="text-sm">1. VerseMilla-An online market place</li>
+        </ol>
+      ),
     },
     {
-      icon: "work",
+      icon: "system_update_tv",
       text: "Currently Learning",
       content: (
-        <ol className=" flex flex-col gap-2">
+        <ol className=" flex flex-col gap-2 text-sm">
           <l1>1. TypeScript</l1>
           <l1>2. NodeJs</l1>
           <l1>3. Docker</l1>
@@ -26,27 +30,30 @@ const Contact = () => {
       ),
     },
     {
-      icon: "notebook",
+      icon: "book",
       text: "Currently Reading",
-      content: "1. The Chips",
-    },
-    {
-      icon: "insert_invitation",
-      text: "Currently Watching",
       content: (
-        <p className="text-sm">
-          I'm not watching anything right now. No time for TV
-        </p>
+        <ol>
+          <li className="text-sm">1. Zero to One</li>
+        </ol>
       ),
     },
     {
-      icon: "computer",
+      icon: "live_tv",
+      text: "Currently Watching",
+      content: (
+        <ol>
+          <li className="text-sm">1. Inventing Anna</li>
+        </ol>
+      ),
+    },
+    {
+      icon: "gamepad",
       text: "Currently Playing",
       content: (
         <ul>
-          <li>
-            1. Dream League
-            <img src="" />
+          <li className="text-sm">
+            I'm not playing any game right now. No time to play game😥
           </li>
         </ul>
       ),

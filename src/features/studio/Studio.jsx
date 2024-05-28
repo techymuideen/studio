@@ -31,12 +31,12 @@ const Studio = () => {
     <Fragment>
       {showModalA && <ModalA onClose={hideModalAHander} />}
 
-      <div className="h-[100%] w-[100%] bg-studio-light bg-cover px-14 dark:bg-studio-dark">
+      <div className="h-[100%] w-[100%] bg-studio-light bg-cover px-4 md:px-8 lg:px-14 dark:bg-studio-dark">
         <div className="mx-auto  max-w-[1100px] py-10">
-          <div className="flex gap-10">
+          <div className="flex flex-col gap-10 lg:flex-row">
             <div
               data-aos="fade-right"
-              className="box w-20  flex-[45%] bg-transparent p-8 backdrop-blur-[1px] transition-all duration-300 hover:backdrop-blur-sm dark:text-white "
+              className="box bg-transparent  p-8 backdrop-blur-[1px] transition-all duration-300 hover:backdrop-blur-sm  dark:text-white "
             >
               <p className="mb-3 text-[34px] font-light">
                 Welcome to{" "}
@@ -54,7 +54,7 @@ const Studio = () => {
                 experience.
               </p>
               <p className="mt-3 text-xs">
-                Also part time debater + gamer 🎤👾🎮
+                Also part time debater + writer 🎤👾✍
               </p>
               <div className="flex items-center justify-end">
                 <button
@@ -67,7 +67,7 @@ const Studio = () => {
             </div>
             <div
               data-aos="fade-right"
-              className="flex flex-[45%] flex-col items-end justify-between text-xl font-light"
+              className="flex flex-[45%] flex-col items-end justify-between gap-10 text-xl font-light lg:gap-0"
             >
               <div className="box text-lightblack px-4 py-3 backdrop-blur-[1px] transition-all duration-300 hover:backdrop-blur-sm dark:text-white">
                 <Time />

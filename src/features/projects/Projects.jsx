@@ -1,16 +1,21 @@
-import React from "react";
+import { useContext } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import Card from "../../ui/Card";
 
+import ThemeContext from "../../../store/theme-context";
+
 const Projects = () => {
+  const ctx = useContext(ThemeContext);
+
   return (
-    <div className="bg-[#F5F5F5] ">
-      <div className="flex pb-10 pl-4  pt-20 dark:bg-black">
-        <div className="flex-[50%]">
+    <div className="  bg-[#EFEFEF] dark:bg-black">
+      <div className="  relative mb-10  ml-4 mt-20 flex overflow-hidden rounded-l-3xl  lg:flex-row">
+        <div className="z-20 lg:flex-[50%] ">
           <Card />
         </div>
-        <div className="flex-[50%] "></div>
+        <div className="z-20 hidden lg:inline lg:flex-[50%] "></div>
       </div>
+
       <div className="h-[10px] bg-gradient-to-r from-pink to-[#9C27B0]" />
       <div className="bg-[#F5F5F5] px-4 py-8 dark:bg-black">
         <div className="flex ">

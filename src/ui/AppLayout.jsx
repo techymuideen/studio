@@ -26,11 +26,20 @@ const AppLayout = () => {
         onToggle: toggleSideBarHandler,
       }}
     >
-      <div className={`flex  ${dark ? "dark" : ""} `} id="overlays">
+      <div
+        className={`flex w-[100%]   ${dark ? "dark bg-black" : "bg-white"} `}
+        id="overlays"
+      >
         <SideBar />
-        <div className="border-1 min-h-[100%] flex-1 ">
+        <div className="border-1 -z-0 min-h-[100vh] w-[100%] flex-1 ">
           <Header />
-          <main className="max-h-[100%] ">
+          <main className="min-h-[100vh] ">
+            {toggleSideBar && (
+              <div
+                onClick={toggleSideBarHandler}
+                className=" fixed left-0 top-0 z-10 h-[100vh] w-[100%] bg-[#0008] backdrop-blur-sm lg:hidden"
+              />
+            )}
             <Outlet />
           </main>
           <Footer />

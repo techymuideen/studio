@@ -64,11 +64,10 @@ const processData = [
 
 const Process = () => {
   return (
-    <div className="-ml-6 flex flex-col items-start gap-10">
+    <div className="-ml-[20px] flex flex-col items-start gap-10 lg:-ml-6">
       {processData.map((data) => {
         return (
           <ProcessItem
-           
             key={data.icon}
             text={data.text}
             title={data.title}

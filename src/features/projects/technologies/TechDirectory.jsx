@@ -145,7 +145,7 @@ const TechDirectory = () => {
       <h2 className="rounded-t-sm bg-[#3F51B5] p-4 text-2xl font-normal text-[#fff]">
         Tech Directory
       </h2>
-      <div className="flex ">
+      <div className="flex flex-col-reverse pt-10 md:flex-row lg:pt-0 ">
         <div className=" flex flex-[35%] flex-col gap-1 border-r-2 pb-6 pt-8 text-base font-normal text-[rgba(0,0,0,.8)] dark:border-[#b5b2b218] dark:text-[#fff]">
           <Link className="px-6 pb-1">
             <SeeMore text="My Home Setup" icon="home" content={content} />

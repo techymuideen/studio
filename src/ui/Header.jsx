@@ -24,10 +24,10 @@ const Header = () => {
         <Svg name="menu" color={ctx.darkTheme ? "#fff" : undefined} />
       </div>
       <h2 className="ml-5 text-xl font-normal text-black dark:font-black dark:text-white">
-        Pop.<span className="font-black text-pink">Studio</span>
+        Muideen.<span className="font-black text-pink">Popoola</span>
       </h2>
 
-      <ul className="ml-auto flex items-center gap-4 ">
+      <ul className="ml-auto hidden items-center gap-4 lg:flex ">
         {icons.map((icon) => {
           return (
             <li key={icon.name}>
@@ -42,7 +42,10 @@ const Header = () => {
         })}
       </ul>
 
-      <div className="ml-5 cursor-pointer" onClick={ctx.onChangeTheme}>
+      <div
+        className="ml-auto cursor-pointer lg:ml-5"
+        onClick={ctx.onChangeTheme}
+      >
         <Svg
           name={`${ctx.darkTheme ? "toggle_on" : "toggle_off"}`}
           color={ctx.darkTheme ? "#E91E63" : "#BDBDBD"}

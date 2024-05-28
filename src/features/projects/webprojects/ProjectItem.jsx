@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Svg from "../../../ui/Svg";
 import Popup from "../../../ui/Popup";
+import Rainbow from "../../../ui/Rainbow";
 
 const ProjectItem = (props) => {
   return (
@@ -11,12 +12,15 @@ const ProjectItem = (props) => {
 
         return (
           <div
-            data-aos="fade-right"
+            data-aos="fade-up"
             key={id}
-            className="box flex h-[250px] rounded-md bg-[#fff] p-0 dark:bg-[#1E1E1E]"
+            className="box flex  flex-col rounded-md bg-[#fff] p-0 md:h-[250px] md:flex-row dark:bg-[#1E1E1E]"
           >
-            <img className="w-[40%]" src={project.img} />
-            <div className="flex w-[60%] flex-col p-5">
+            <img className=" w-[100%] md:w-[40%]" src={project.img} />
+            <div className="block h-1 md:hidden">
+              <Rainbow />
+            </div>
+            <div className="flex w-[100%] flex-col p-5 md:w-[60%]">
               <h3 className="mb-1 text-2xl font-normal text-light-black dark:text-[#fff]">
                 {project.title}
               </h3>
@@ -52,7 +56,7 @@ const ProjectItem = (props) => {
                   } marker:hover:bg-currentcolor flex items-center justify-center  gap-2 rounded-sm   bg-ash px-4 py-2 text-base font-medium uppercase text-gray-800 shadow-neum transition-all  duration-150 hover:bg-darkash  hover:shadow-deneum dark:bg-black dark:text-white dark:shadow-neum-dark-2 dark:hover:bg-neum-bg-dark  dark:hover:shadow-neum-dark-3`}
                 >
                   <Svg name="event_available" color="currentcolor" />
-                  Github
+                  <span className="hidden sm:inline">Github</span>
                 </Link>
 
                 <Link
@@ -61,7 +65,7 @@ const ProjectItem = (props) => {
                   className="hover:bg-currentcolor flex items-center justify-center  gap-2 rounded-sm   bg-ash px-4 py-2 text-base font-medium uppercase text-gray-800 shadow-neum transition-all  duration-150 hover:bg-darkash  hover:shadow-deneum dark:bg-black dark:text-white dark:shadow-neum-dark-2 dark:hover:bg-neum-bg-dark  dark:hover:shadow-neum-dark-3"
                 >
                   <Svg name="event_available" color="currentcolor" />
-                  Project
+                  <span className="hidden sm:inline">Project</span>
                 </Link>
 
                 <Link
@@ -70,7 +74,7 @@ const ProjectItem = (props) => {
                   className="hover:bg-currentcolor flex items-center justify-center  gap-2 rounded-sm   bg-ash px-4 py-2 text-base font-medium uppercase text-gray-800 shadow-neum transition-all  duration-150 hover:bg-darkash  hover:shadow-deneum dark:bg-black dark:text-white dark:shadow-neum-dark-2 dark:hover:bg-neum-bg-dark  dark:hover:shadow-neum-dark-3"
                 >
                   <Svg name="event_available" color="currentcolor" />
-                  Notes
+                  <span className="hidden sm:inline">Notes</span>
                 </Link>
               </div>
             </div>

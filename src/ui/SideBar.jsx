@@ -14,7 +14,7 @@ const SideBar = () => {
         data-aos="fade-right"
         data-aos-duration="200"
         data-aos-delay="0"
-        className={`transition-hover sticky top-0 flex h-screen flex-col px-3 pb-2 pt-4 duration-200 dark:bg-black `}
+        className={`transition-hover fixed left-0 top-0  z-30  flex h-[100vh]  w-[70%] flex-col bg-[#EFEFEF] px-3 pb-2 pt-4 duration-200 sm:w-[55%]  md:w-[40%] lg:sticky lg:w-auto dark:bg-black `}
       >
         <div className="flex-1 overflow-auto pr-2">
           <div className="flex gap-3 border-b border-slate-300 pb-4 dark:border-gray-700">
