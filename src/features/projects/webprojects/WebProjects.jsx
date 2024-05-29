@@ -5,8 +5,8 @@ import ProjectItem from "./ProjectItem";
 import cissa from "../../../assets/Cissa.png";
 import advicerr from "../../../assets/advicerr.png";
 import DevLeague from "../../../assets/DevLeague.png";
-import shortly from "../../../assets/shortly.png";
-import studio from "../../../assets/studio.png";
+import shortly from "../../../assets/Shortly.png";
+import studio from "../../../assets/Studio.png";
 import ProjectsFilter from "./ProjectsFilter";
 
 const webprojects = [
