@@ -87,6 +87,20 @@ const webprojects = [
       { name: "sass" },
     ],
   },
+
+  {
+    title: "Pop Studio",
+    description: "My old portfolio site built with vanilla js",
+    status: "completed",
+    img: studio,
+    live: "https://techymuideen.github.io/studio",
+    stack: [
+      { name: "html5" },
+      { name: "css3" },
+      { name: "sass" },
+      { name: "javascript" },
+    ],
+  },
 ];
 
 const WebProjects = () => {
