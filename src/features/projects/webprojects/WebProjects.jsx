@@ -2,42 +2,90 @@ import { useState, useCallback } from "react";
 
 import Rainbow from "../../../ui/Rainbow";
 import ProjectItem from "./ProjectItem";
-import trillo from "../../../assets/trillo.png";
-import nexter from "../../../assets/nexter.png";
-import natours from "../../../assets/natours.png";
+import cissa from "../../../assets/Cissa.png";
+import advicerr from "../../../assets/advicerr.png";
+import DevLeague from "../../../assets/DevLeague.png";
+import shortly from "../../../assets/shortly.png";
+import studio from "../../../assets/studio.png";
 import ProjectsFilter from "./ProjectsFilter";
 
 const webprojects = [
   {
-    title: "Natours",
-    description:
-      "Simple Website for the company I currently work for (Nov 2021)",
-    status: "completed",
-    img: natours,
+    title: "DevLeague",
+    description: "A simple website for the DevLeague Community",
+    status: "uncompleted",
+    img: DevLeague,
+    github: "https://github.com/techymuideen/dev-league-m",
     stack: [
       { name: "html5" },
       { name: "css3" },
       { name: "javascript" },
-      { name: "firebase" },
+      { name: "react" },
+      { name: "tailwindcss" },
+    ],
+    isNotLive: true,
+  },
+  {
+    title: "Anon Chat",
+    description: "A simple anonymous chat application.",
+    status: "uncompleted",
+    img: cissa,
+    stack: [
+      { name: "html5" },
+      { name: "css3" },
+      { name: "javascript" },
+      { name: "react" },
+      { name: "tailwindcss" },
+      { name: "nodejs" },
+    ],
+    disable: true,
+    isNotLive: true,
+  },
+
+  {
+    title: "Pop Studio",
+    description: "My current portfolio site!😍😎",
+    status: "uncompleted",
+    img: studio,
+    live: "https://techymuideen.github.io/studio",
+    stack: [
+      { name: "html5" },
+      { name: "css3" },
+      { name: "javascript" },
+      { name: "react" },
+      { name: "tailwindcss" },
     ],
     disable: true,
   },
 
   {
-    title: "Trillo",
-    description:
-      "A simple nodejs app built to practice JSON web tokens (JWT) and user authentication",
-    status: "uncompleted",
-    img: trillo,
-    stack: [{ name: "html5" }, { name: "sass" }, { name: "javascript" }],
+    title: "Advicerr",
+    description: "A simple app that generate random advice.",
+    status: "completed",
+    img: advicerr,
+    github: "https://github.com/techymuideen/AdviceGenerator",
+    live: "https://advicerr.netlify.app/",
+    stack: [
+      { name: "html5" },
+      { name: "css3" },
+      { name: "javascript" },
+      { name: "sass" },
+    ],
   },
 
   {
-    title: "Netflix Landing Page UI",
-    description: "Simple UI Netflix landing page UI clone.",
+    title: "Shortly",
+    description: "A simple URL Shortner",
     status: "completed",
-    img: nexter,
-    stack: [{ name: "html5" }, { name: "css3" }, { name: "javascript" }],
+    img: shortly,
+    github: "https://github.com/techymuideen/Shortly",
+    live: "https://linkshorter.netlify.app/",
+    stack: [
+      { name: "html5" },
+      { name: "css3" },
+      { name: "javascript" },
+      { name: "sass" },
+    ],
   },
 ];
 
@@ -45,11 +93,14 @@ const WebProjects = () => {
   const [realFilteredProjects, setRealFilteredProjects] = useState(webprojects);
 
   const filteredProjectsHandler = useCallback((selectedStack) => {
-    const filteredProjects = webprojects.filter((project) =>
-      selectedStack.every((selectedTech) =>
-        project.stack.some((tech) => tech.name === selectedTech),
-      ),
-    );
+    const filteredProjects =
+      selectedStack.length === 0
+        ? webprojects
+        : webprojects.filter((project) =>
+            selectedStack.some((selectedTech) =>
+              project.stack.some((tech) => tech.name === selectedTech),
+            ),
+          );
 
     setRealFilteredProjects(filteredProjects);
   }, []);

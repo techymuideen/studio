@@ -6,13 +6,25 @@ const Header = () => {
   const ctx = useContext(ThemeContext);
 
   const icons = [
-    { name: "twitter1", link: "", color: "#2196F3" },
-    { name: "facebook", link: "" },
-    { name: "whatsapp", link: "" },
-    { name: "github1", link: "", color: `${ctx.darkTheme ? "#fff" : "#000"}` },
-    { name: "twitch1", link: "", color: "#E91E63" },
-    { name: "discord", link: "" },
-    { name: "youtube", link: "", color: "#FF0000" },
+    {
+      name: "x",
+      link: "https://x.com/techymuideen",
+      color: `${ctx.darkTheme ? "#fff" : "#000"}`,
+    },
+    { name: "facebook", link: "https://www.facebook.com/PopWealth" },
+    { name: "whatsapp", link: "https://wa.link/y6ticx" },
+    {
+      name: "github1",
+      link: "https://github.com/techymuideen",
+      color: `${ctx.darkTheme ? "#fff" : "#000"}`,
+    },
+    {
+      name: "linkedin",
+      link: "https://www.linkedin.com/in/muideenpopoola?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      color: `${ctx.darkTheme ? "#fff" : "#000"}`,
+    },
+
+    { name: "telegram", link: "https://t.me/MuideenPopoola" },
   ];
 
   return (
@@ -24,7 +36,7 @@ const Header = () => {
         <Svg name="menu" color={ctx.darkTheme ? "#fff" : undefined} />
       </div>
       <h2 className="ml-5 text-xl font-normal text-black dark:font-black dark:text-white">
-        Muideen.<span className="font-black text-pink">Popoola</span>
+        Pop.<span className="font-black text-pink">Studio</span>
       </h2>
 
       <ul className="ml-auto hidden items-center gap-4 lg:flex ">
@@ -32,6 +44,8 @@ const Header = () => {
           return (
             <li key={icon.name}>
               <a
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center rounded-full bg-ash p-[10px] shadow-neum hover:shadow-deneum dark:bg-black dark:shadow-rounded-neum-dark dark:hover:bg-neum-bg-dark dark:hover:shadow-round-deneum-dark"
                 href={icon.link}
               >

@@ -137,7 +137,7 @@ const ProjectsFilter = ({ onSelect }) => {
             onChange={filterHandler}
             type="checkbox"
             className="checkbox"
-            id="reactjs"
+            id="react"
           />
           <label className="cursor-pointer" htmlFor="reactjs">
             React JS

@@ -14,7 +14,7 @@ const ProjectItem = (props) => {
           <div
             data-aos="fade-up"
             key={id}
-            className="box flex  flex-col rounded-md bg-[#fff] p-0 md:h-[250px] md:flex-row dark:bg-[#1E1E1E]"
+            className="box flex  flex-col rounded-md bg-[#fff] p-0 md:h-[210px] md:flex-row dark:bg-[#1E1E1E]"
           >
             <img className=" w-[100%] md:w-[40%]" src={project.img} />
             <div className="block h-1 md:hidden">
@@ -50,7 +50,7 @@ const ProjectItem = (props) => {
               <div className="mt-2 flex gap-3">
                 <Link
                   target="_blank"
-                  to="https://github.com/muideenpopoola"
+                  to={project.github}
                   className={`${
                     project.disable ? "pointer-events-none opacity-30" : ""
                   } marker:hover:bg-currentcolor flex items-center justify-center  gap-2 rounded-sm   bg-ash px-4 py-2 text-base font-medium uppercase text-gray-800 shadow-neum transition-all  duration-150 hover:bg-darkash  hover:shadow-deneum dark:bg-black dark:text-white dark:shadow-neum-dark-2 dark:hover:bg-neum-bg-dark  dark:hover:shadow-neum-dark-3`}
@@ -61,8 +61,10 @@ const ProjectItem = (props) => {
 
                 <Link
                   target="_blank"
-                  to="https://github.com/muideenpopoola"
-                  className="hover:bg-currentcolor flex items-center justify-center  gap-2 rounded-sm   bg-ash px-4 py-2 text-base font-medium uppercase text-gray-800 shadow-neum transition-all  duration-150 hover:bg-darkash  hover:shadow-deneum dark:bg-black dark:text-white dark:shadow-neum-dark-2 dark:hover:bg-neum-bg-dark  dark:hover:shadow-neum-dark-3"
+                  to={project.live}
+                  className={`${
+                    project.isNotLive ? "pointer-events-none opacity-30" : ""
+                  } marker:hover:bg-currentcolor flex items-center justify-center  gap-2 rounded-sm   bg-ash px-4 py-2 text-base font-medium uppercase text-gray-800 shadow-neum transition-all  duration-150 hover:bg-darkash  hover:shadow-deneum dark:bg-black dark:text-white dark:shadow-neum-dark-2 dark:hover:bg-neum-bg-dark  dark:hover:shadow-neum-dark-3`}
                 >
                   <Svg name="event_available" color="currentcolor" />
                   <span className="hidden sm:inline">Project</span>

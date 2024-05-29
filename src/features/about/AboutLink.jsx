@@ -400,8 +400,15 @@ const AboutLink = () => {
       </div>
 
       <Link
+        to="https://techymuideen.github.io/portfolio/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
         onClick=""
-        className="hover:bg-currentcolor flex items-center justify-center gap-2 rounded-lg bg-ash px-4 py-3 uppercase shadow-neum transition-all duration-150 hover:bg-darkash hover:shadow-deneum dark:bg-black dark:shadow-neum-dark dark:hover:bg-neum-bg-dark dark:hover:shadow-deneum-dark"
+        className="hover:bg-currentcolor flex items-center
+        justify-center gap-2 rounded-lg bg-ash px-4 py-3 uppercase shadow-neum
+        transition-all duration-150 hover:bg-darkash hover:shadow-deneum
+        dark:bg-black dark:shadow-neum-dark dark:hover:bg-neum-bg-dark
+        dark:hover:shadow-deneum-dark"
       >
         <Svg name="file_download" color="currentcolor" />
         Resume
