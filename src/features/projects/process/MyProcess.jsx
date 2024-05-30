@@ -1,5 +1,5 @@
 import Rainbow from "../../../ui/Rainbow";
-import Process from "./process";
+import Process from "./Process";
 
 const MyProcess = () => {
   return (
