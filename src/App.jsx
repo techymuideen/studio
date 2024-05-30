@@ -10,6 +10,8 @@ import Library from "./features/library/Library";
 import Technologies from "./features/projects/technologies/Technologies";
 import WebProjects from "./features/projects/webprojects/WebProjects";
 import MyProcess from "./features/projects/process/MyProcess";
+
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -45,7 +47,11 @@ function App() {
     });
   }, []);
 
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+      <SpeedInsights />
+    </>
+  );
 }
-
 export default App;
