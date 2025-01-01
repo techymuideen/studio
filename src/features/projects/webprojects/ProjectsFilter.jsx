@@ -104,9 +104,9 @@ const ProjectsFilter = ({ onSelect }) => {
             onChange={filterHandler}
             type="checkbox"
             className="checkbox"
-            id="nodejs"
+            id="node-dot-js"
           />
-          <label className="cursor-pointer" htmlFor="nodejs">
+          <label className="cursor-pointer" htmlFor="node-dot-js">
             Node JS
           </label>
         </div>
@@ -196,6 +196,28 @@ const ProjectsFilter = ({ onSelect }) => {
           />
           <label className="cursor-pointer" htmlFor="sass">
             Sass
+          </label>
+        </div>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input
+            onChange={filterHandler}
+            type="checkbox"
+            className="checkbox"
+            id="expressjs"
+          />
+          <label className="cursor-pointer" htmlFor="expressjs">
+            Express.Js
+          </label>
+        </div>
+        <div className="flex cursor-pointer items-center gap-2">
+          <input
+            onChange={filterHandler}
+            type="checkbox"
+            className="checkbox"
+            id="mongodb"
+          />
+          <label className="cursor-pointer" htmlFor="mongodb">
+            MongoDB
           </label>
         </div>
         <div className="flex cursor-pointer items-center gap-2">

@@ -20,7 +20,7 @@ const Header = () => {
     },
     {
       name: "linkedin",
-      link: "https://www.linkedin.com/in/muideenpopoola?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      link: "https://www.linkedin.com/in/muideenpopoola",
       color: `${ctx.darkTheme ? "#fff" : "#000"}`,
     },
 

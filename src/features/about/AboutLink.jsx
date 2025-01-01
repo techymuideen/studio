@@ -35,10 +35,6 @@ const Clickss = [
           <Svg name="typescript" size="20" />
           <span>Typescript</span>
         </l1>
-        <l1 className="flex items-center gap-3">
-          <Svg name="python" size="20" />
-          <span>Python</span>
-        </l1>
       </ol>
     ),
   },
@@ -60,10 +56,9 @@ const Clickss = [
           <span>Javascript - ES6</span>
         </l1>
         <l1 className="flex items-center gap-3">
-          <Svg name="react" size="20" />
-          <span>React</span>
+          <Svg name="typescript" size="20" />
+          <span>Typescript</span>
         </l1>
-
         <l1 className="flex items-center gap-3">
           <Svg name="bootstrap" size="20" />
           <span>BootStrap</span>
@@ -78,6 +73,14 @@ const Clickss = [
           <Svg name="tailwindcss" size="20" />
           <span>Tailwind</span>
         </l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="react" size="20" />
+          <span>React</span>
+        </l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="next-dot-js" size="20" />
+          <span>Nextjs</span>
+        </l1>
       </ol>
     ),
   },
@@ -88,7 +91,15 @@ const Clickss = [
       <ol className=" flex flex-col gap-2">
         <l1 className="flex items-center gap-3">
           <Svg name="node-dot-js" size="20" />
-          <span>Node + Express</span>
+          <span>Node</span>
+        </l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="nestjs" size="20" />
+          <span>NestJs</span>
+        </l1>
+        <l1 className="flex items-center gap-3">
+          <Svg name="expressjs" size="20" />
+          <span>ExpressJs</span>
         </l1>
         <l1 className="flex items-center gap-3">
           <Svg name="firebase" size="20" />
@@ -108,7 +119,7 @@ const Clickss = [
         </l1>
 
         <l1 className="flex items-center gap-3">
-          <Svg name="library_books" size="20" />
+          <Svg name="mongodb" size="20" />
           <span>MongoDB</span>
         </l1>
       </ol>

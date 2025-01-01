@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div className="  bg-[#EFEFEF] dark:bg-black">
       <div className="  relative mb-10  ml-4 mt-20 flex overflow-hidden rounded-l-3xl  lg:flex-row">
-        <div className="z-20 lg:flex-[50%] ">
+        <div className="z-2 lg:flex-[50%] ">
           <Card />
         </div>
         <div className="z-20 hidden lg:inline lg:flex-[50%] "></div>

@@ -7,13 +7,46 @@ import advicerr from "../../../assets/advicerr.png";
 import DevLeague from "../../../assets/DevLeague.png";
 import shortly from "../../../assets/Shortly.png";
 import studio from "../../../assets/Studio.png";
+import kasua from "../../../assets/kasua.png";
+import ireporter from "../../../assets/ireporter.png";
 import ProjectsFilter from "./ProjectsFilter";
 
 const webprojects = [
   {
+    title: "Kasua",
+    description: "An ecommerce platform that connect sellers with buyers",
+    status: "uncompleted",
+    img: kasua,
+    github: "https://github.com/techymuideen/kasua",
+    live: "https://kasua.vercel.app/",
+    stack: [
+      { name: "react" },
+      { name: "tailwindcss" },
+      { name: "node-dot-js" },
+      { name: "expressjs" },
+      { name: "mongodb" },
+    ],
+  },
+  {
+    title: "iReporter",
+    description: "A fullstack application that allow users to make reports",
+    status: "completed",
+    img: ireporter,
+    github: "https://github.com/techymuideen/iReporter",
+    live: "https://ireporterr.vercel.app/",
+    stack: [
+      { name: "react" },
+      { name: "tailwindcss" },
+      { name: "node-dot-js" },
+      { name: "expressjs" },
+      { name: "mongodb" },
+    ],
+  },
+
+  {
     title: "DevLeague",
     description: "A simple website for the DevLeague Community",
-    status: "uncompleted",
+    status: "completed",
     img: DevLeague,
     github: "https://github.com/techymuideen/dev-league-m",
     stack: [
@@ -36,7 +69,7 @@ const webprojects = [
       { name: "javascript" },
       { name: "react" },
       { name: "tailwindcss" },
-      { name: "nodejs" },
+      { name: "node-dot-js" },
     ],
     disable: true,
     isNotLive: true,
@@ -85,20 +118,6 @@ const webprojects = [
       { name: "css3" },
       { name: "javascript" },
       { name: "sass" },
-    ],
-  },
-
-  {
-    title: "Pop Studio",
-    description: "My old portfolio site built with vanilla js",
-    status: "completed",
-    img: studio,
-    live: "https://techymuideen.github.io/studio",
-    stack: [
-      { name: "html5" },
-      { name: "css3" },
-      { name: "sass" },
-      { name: "javascript" },
     ],
   },
 ];

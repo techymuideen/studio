@@ -10,13 +10,19 @@ const navData = [
   { name: "library", text: "Library", to: "/library" },
 ];
 
-const Navigation = () => {
+const Navigation = ({ ctx }) => {
+  const clickHandler = () => {
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+      ctx.onToggle();
+    }
+  };
+
   return (
     <nav className="">
       <ul className="flex flex-col text-base font-medium uppercase text-gray-800 dark:text-white">
         {navData.map((nav) => {
           return (
-            <li key={nav.name} className=" mb-4 ">
+            <li onClick={clickHandler} key={nav.name} className=" mb-4 ">
               <NavLink
                 to={nav.to}
                 className={({ isActive }) =>

@@ -12,13 +12,22 @@ const skills = [
   { name: "css3", icon: "CSS3" },
   { name: "javascript", icon: "Javascript" },
   { name: "typescript", icon: "Typescript" },
-  { name: "firebase", icon: "Firebase" },
-  { name: "node-dot-js", icon: "Nodejs" },
+
   { name: "sass", icon: "Sass" },
   { name: "tailwindcss", icon: "Tailwind" },
   { name: "bootstrap", icon: "Bootstrap" },
-  { name: "next-dot-js", icon: "Nextjs" },
+
   { name: "react", icon: "React" },
+  { name: "next-dot-js", icon: "Nextjs" },
+
+  { name: "node-dot-js", icon: "Nodejs" },
+  { name: "expressjs", icon: "ExpressJs" },
+  { name: "nestjs", icon: "NestJs" },
+
+  { name: "mysql", icon: "MySQL" },
+  { name: "mongodb", icon: "MongoDB" },
+
+  { name: "firebase", icon: "Firebase" },
   { name: "wordpress", icon: "Wordpress" },
 ];
 
@@ -46,24 +55,32 @@ const About = () => {
           <div className="flex items-center gap-1">
             <Popup text="Github">
               <div className="cursor-pointer rounded-full p-3 transition hover:bg-[#fff4]">
-                <Link to="">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/techymuideen"
+                >
                   <Svg
                     name="github1"
                     size="28"
                     color={ctx.darkTheme ? "#fff" : "#000"}
                   />
-                </Link>
+                </a>
               </div>
             </Popup>
             <Popup text="LinkedIn">
               <div className="cursor-pointer rounded-full p-3 transition hover:bg-[#fff4]">
-                <Link to="">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/muideenpopoola"
+                >
                   <Svg
                     name="linkedin1"
                     size="28"
                     color={ctx.darkTheme ? "#fff" : "#000"}
                   />
-                </Link>
+                </a>
               </div>
             </Popup>
             <Popup className="ml-auto" text="Menu">
@@ -88,7 +105,9 @@ const About = () => {
             <p className="mb-2 text-3xl dark:text-pink">
               {ctx.darkTheme ? "@TechyMuideen" : "Muideen Popoola"}
             </p>
-            <p className=" text-xl  dark:text-[#efefef] ">Frontend Developer</p>
+            <p className=" text-xl  dark:text-[#efefef] ">
+              FullStack Developer
+            </p>
           </div>
 
           <div className="mt-2 flex  flex-wrap justify-center gap-2 px-10">

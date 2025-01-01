@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 const Studio = () => {
   const [showModalA, setShowModalA] = useState(false);
   const ctx = useContext(ThemeContext);
-  const date = new Date("January 1, 2022 08:11:00");
+  const date = new Date("January 1, 2023 08:11:00");
   const now = new Date();
 
   let years = (now.getTime() - date.getTime()) / 1000;
@@ -50,7 +50,7 @@ const Studio = () => {
                 <a className="font-medium underline" href="">
                   {ctx.darkTheme ? "TechyMuideen" : "Muideen Popoola"}
                 </a>
-                . A Frontend Developer with over {experience} years coding
+                . A FullStack Developer with over {experience} years coding
                 experience.
               </p>
               <p className="mt-3 text-xs">

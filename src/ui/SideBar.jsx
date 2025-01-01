@@ -27,7 +27,7 @@ const SideBar = () => {
               </h3>
             </div>
           </div>
-          <Navigation />
+          <Navigation ctx={ctx} />
         </div>
         <Link
           to="/library"

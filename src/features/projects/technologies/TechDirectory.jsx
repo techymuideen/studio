@@ -52,7 +52,7 @@ const TechDirectory = () => {
         <Svg name="javascript" /> <p> Javascript (ES6)</p>
       </Link>
       <Link className="pad handler space">
-        <Svg name="sass" /> <p> SASS</p>
+        <Svg name="typescript" /> <p> Typescript</p>
       </Link>
     </Fragment>
   );
@@ -60,17 +60,12 @@ const TechDirectory = () => {
   const myFrameworksContent = (
     <Fragment>
       <Link className="pad handler space">
-        <Svg name="vue-dot-js" />
-        <p> Vue Js</p>
-      </Link>
-
-      <Link className="pad handler space">
-        <Svg name="angular" />
-        <p> Angular 2</p>
-      </Link>
-
-      <Link className="pad handler space">
         <Svg name="react" /> <p> React</p>
+      </Link>
+
+      <Link className="pad handler space">
+        <Svg name="next-dot-js" />
+        <p> NextJs</p>
       </Link>
     </Fragment>
   );
@@ -78,22 +73,20 @@ const TechDirectory = () => {
   const myLibrariesContent = (
     <Fragment>
       <Link className="pad handler space">
-        <Svg name="vue-dot-js" /> <p>Vuetify</p>
-      </Link>
-
-      <Link className="pad handler space">
-        <Svg name="angular" /> <p> Angular Material</p>
-      </Link>
-
-      <Link className="pad handler space">
-        <Svg name="materialdesign" /> <p> Material UI</p>
+        <Svg name="wordpress" /> <p> Wordpress</p>
       </Link>
       <Link className="pad handler space">
         <Svg name="bootstrap" /> <p> Bootstrap</p>
       </Link>
+
+      <Link className="pad handler space">
+        <Svg name="sass" />
+        <p> Sass</p>
+      </Link>
+
       <Link className="pad handler space">
         <Svg name="tailwindcss" />
-        <p> tailwindcss</p>
+        <p> Tailwindcss</p>
       </Link>
     </Fragment>
   );
@@ -128,14 +121,23 @@ const TechDirectory = () => {
       </Link>
 
       <Link className="pad handler space">
+        <Svg name="expressjs" /> <p> ExpressJs </p>
+      </Link>
+
+      <Link className="pad handler space">
+        <Svg name="nestjs" /> <p> NestJs </p>
+      </Link>
+
+      <Link className="pad handler space">
         <Svg name="database" /> <p> MySQL</p>
       </Link>
 
       <Link className="pad handler space">
-        <Svg name="firebase" /> <p> Firebase </p>
+        <Svg name="mongodb" /> <p> MongoDb </p>
       </Link>
+
       <Link className="pad handler space">
-        <Svg name="django" /> <p> Django </p>
+        <Svg name="firebase" /> <p> Firebase </p>
       </Link>
     </Fragment>
   );
