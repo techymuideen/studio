@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import forms from "@tailwindcss/forms";
+
 export default {
   darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -35,21 +37,16 @@ export default {
         "neum-dark-2": "3px 3px 3px #000000, -1px -1px 1px #fff",
         "neum-dark-3": "5px 5px 5px #000000, -1px -1px 1px #fff",
         header: "0px 3px 5px rgba(0,0,0,.4)",
-
         button: "4px 4px 4px rgba(0,0,0,.4)",
         darkbutton: "4px 4px 3px rgba(0,0,0,.8)",
-
         "modal-shadow": "0 2px 8px rgba(0, 0, 0, 0.25)",
-
         smallbutton: "3px 3px 3px rgba(0,0,0,.4)",
         hoversmallbutton: "4px 4px 4px rgba(0,0,0,.4)",
-
         box: "0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)",
-        boxabout: " 2px 2px 5px 0 rgba(0,0,0,.5)",
+        boxabout: "2px 2px 5px 0 rgba(0,0,0,.5)",
         modalbox:
-          " 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12)",
+          "0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12)",
       },
-
       colors: {
         ash: "#F5F5F5",
         darkash: "#dadada",
@@ -77,5 +74,5 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [forms],
 };
